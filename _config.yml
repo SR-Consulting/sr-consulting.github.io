@@ -1,7 +1,7 @@
 # Site settings
-title: "SR Consulting | Consultoria, Implantação e Customização no CRM #1"
-description: "Consultoria parceira e certificada em implantação, desenvolvimento e treinamento Saleforce, transformação digital, openbanking, analytics e integração." # this means to ignore newlines until "baseurl:"
-keyword: "Salesforce, Transformação Digital, Openbanking, Analytics, Integração, B2B, B2C, Sales Clould, Service Cloud, Marketing Cloud, Social Studio, Commerce Cloud, Partner Community Cloud, Customer Community Clould, Financial Service Cloud, Helth Clould, Education Cloud, Einstein, Tableau, Mulesoft, Heroku e App Exchange"
+title: "SR Consulting | Consultoria, Implantação e Customização do CRM #1"
+description: "Consultoria parceira e certificada em implantação, desenvolvimento e treinamento Salesforce, transformação digital, openbanking e integração." # this means to ignore newlines until "baseurl:"
+keyword: "Salesforce, Transformação Digital, Open Banking, Integração, B2B, B2C, Sales Clould, Service Cloud, Marketing Cloud, Social Studio, Commerce Cloud, Partner Community Cloud, Customer Community Clould, Financial Service Cloud, Helth Clould, Education Cloud, Einstein, Analytics, Tableau, Mulesoft, Heroku e App Exchange"
 author: "SR Consulting Ltda"
 email: "contato@srconsulting.io"
 baseurl: "" # the subpath of your site, e.g. /blog/

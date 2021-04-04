@@ -305,6 +305,10 @@ header {
     }
 }
 
+.additional-specialties {
+    padding-bottom: 30px;
+}
+
 .service-box {
     position: relative;
     display: block;
@@ -429,10 +433,6 @@ footer {
 .no-gutter > [class*='col-'] {
     padding-right:0;
     padding-left:0;
-}
-
-.thumbnail {
-    margin-bottom: 0;
 }
 
 // Button Styles
