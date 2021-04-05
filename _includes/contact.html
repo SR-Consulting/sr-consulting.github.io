@@ -14,27 +14,49 @@
         <div class="row no-gutter">
             <div class="col-md-4 col-sm-6 bg-primary">
                 <div class="form-box">
-                    <form>
+                    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+                        <input type=hidden name="oid" value="00D3t000000fp4l">
+                        <input type=hidden name="retURL" value="https://srconsulting.io">
+
                         <div class="form-group">
-                            <label for="name">Nome</label>
-                            <input type="text" placeholder="Seu nome..." class="form-control" id="name">
+                            <label for="first_name">Nome <span class="text-danger">*</span></label>
+                            <input id="first_name" maxlength="40" name="first_name" size="20" type="text" required
+                                placeholder="Seu  nome..." class="form-control" />
                         </div>
+
                         <div class="form-group">
-                            <label for="phone">Telefone</label>
-                            <input type="tel" placeholder="+99 (99) 99999-99999" class="form-control" id="phone">
+                            <label for="last_name">Sobrenome <span class="text-danger">*</span></label>
+                            <input id="last_name" maxlength="80" name="last_name" size="20" type="text"
+                                placeholder="Seu sobrenome..." class="form-control" />
                         </div>
+
                         <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" placeholder="seu@e-mail.com" class="form-control" id="email">
+                            <label for="company">Empresa <span class="text-danger">*</span></label>
+                            <input id="company" maxlength="40" name="company" size="20" type="text" required
+                                placeholder="Sua empresa..." class="form-control" />
                         </div>
+
                         <div class="form-group">
-                            <label for="message">Mensagem</label>
-                            <textarea class="form-control" placeholder="Sua mensagem..." rows="7"
-                                id="message"></textarea>
+                            <label for="mobile">Telefone <span class="text-danger">*</span></label>
+                            <input id="mobile" maxlength="40" name="mobile" size="20" type="phone" required
+                                placeholder="+55 (51) 99999-9999" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail <span class="text-danger">*</span></label>
+                            <input id="email" maxlength="80" name="email" size="20" type="email" required
+                                placeholder="seu@e-mail.com" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="description">Mensagem</label>
+                            <textarea name="description" class="form-control" placeholder="Sua mensagem..."
+                                rows="3"></textarea>
                         </div>
 
                         <div class="form-send-btn">
-                            <button type="submit" class="btn btn-default wow wobble"
+                            <span class="text-danger pull-left">* Informações obrigatórias</span>
+                            <button type="submit" name="submit" class="btn btn-default wow wobble"
                                 data-wow-delay=".1s">Enviar</button>
                         </div>
                     </form>
