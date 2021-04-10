@@ -297,16 +297,31 @@ header {
     .specialties-box-industry {
         background: rgba(gray, .4 );
     }
-    .specialties-box-comunication {
+    .specialties-box-mobile {
         background: rgba(cyan, .4 );
     }
     .specialties-box-analytics {
         background: rgba(chocolate, .4 );
     }
+    .specialties-box-integrations {
+        background: rgba(deepSkyBlue, .4 );
+    }
+    .specialties-box-devops {
+        background: rgba(gold, .4 );
+    }
+    .specialties-box-security {
+        background: rgba(snow, .4 );
+    }
+    .specialties-box-cloud {
+        background: rgba(lightgreen, .4 );
+    }
 }
 
 .additional-specialties {
     padding-bottom: 30px;
+    .thumbnail{
+        max-width: 400px;
+    }
 }
 
 .service-box {
@@ -346,7 +361,7 @@ header {
 .stories-box {
     position: relative;
     display: block;
-    max-width: 650px;
+    max-width: 400px;
     .stories-box-caption {
         display: block;
         background: rgba(white, .8);
