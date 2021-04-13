@@ -324,7 +324,9 @@ header {
 .additional-specialties {
     padding-bottom: 30px;
     .thumbnail{
-        max-width: 400px;
+        @media (min-width: 768px) {
+            max-width: 400px;
+        }
     }
 }
 
