@@ -75,6 +75,13 @@ aside {
     padding: 0;
 }
 
+.align-right {
+    @media (min-width: 768px) {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
 .form-send-btn {
     text-align: right;
 }
@@ -323,7 +330,7 @@ header {
 
 .additional-specialties {
     padding-bottom: 30px;
-    .thumbnail{
+    .thumbnail {
         @media (min-width: 768px) {
             max-width: 400px;
         }
@@ -367,7 +374,9 @@ header {
 .stories-box {
     position: relative;
     display: block;
-    max-width: 400px;
+    @media (min-width: 768px) {
+        max-width: 400px;
+    }
     .stories-box-caption {
         display: block;
         background: rgba(white, .8);
