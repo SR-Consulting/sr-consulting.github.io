@@ -1,4 +1,4 @@
-<section id="contact">
+<section class="no-padding" id="contact">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -10,6 +10,63 @@
         </div>
     </div>
 
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 col-sm-6 text-center">
+                <div class="contact-box">
+                    <a href="tel:{{ site.phone_number }}">
+                        <i class="fa fa-3x fa-phone wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                        <p>{{ site.phone_text }}</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 text-center">
+                <div class="contact-box">
+                    <a href="https://api.whatsapp.com/send?phone={{ site.whatsapp_number }}" target="_blank">
+                        <i class="fab fa-3x fa-whatsapp  wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                        <p>{{ site.whatsapp_text }}</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 text-center">
+                <div class="contact-box">
+                    <i class="far fa-3x fa-envelope wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                    <a href="mailto:{{ site.email }}">
+                        <p>{{ site.email }}</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 text-center">
+                <div class="contact-box">
+                    <a href="https://linkedin.com/company/{{ site.linkedin_username }}" target="_blank">
+                        <i class="fab fa-3x fa-linkedin wow bounceIn text-primary" data-wow-delay=".4s"></i>
+                        <p>{{ site.linkedin_text }}</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row no-gutter">
+            <div class="col-sm-4 text-center bg-dark">
+                <div class="address-box">
+                    <i class="fa fa-3x fa-map-marker-alt"></i>
+                    <a href="{{ site.google_maps_link_url }}" target="_blank">
+                        <address>
+                            {{ site.address_line_1 }}<br>
+                            {{ site.address_line_2 }}<br>
+                        </address>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="map-box">
+                    <iframe src="{{ site.google_maps_embedded_url }}" allowfullscreen=""></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--
     <div class="container-fluid">
         <div class="row no-gutter">
             <div class="col-md-4 col-sm-6 bg-primary">
@@ -108,4 +165,71 @@
             </div>
         </div>
     </div>
+-->
 </section>
+
+<aside class="bg-primary">
+    <div class="container text-center">
+        <p class="text-faded">Você também pode entrar em contato conosco, nos enviando uma mensagem agora mesmo.</p>
+        <a href="#" class="btn btn-default btn-xl wow tada" data-toggle="modal" data-target="#contatModal">Enviar
+            Mensagem</a>
+    </div>
+</aside>
+
+<div class="modal fade" id="contatModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                <h4 class="modal-title">Enviar Mensagem</h4>
+            </div>
+            <div class="modal-body">
+                <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+                    <input type=hidden name="oid" value="00D3t000000fp4l">
+                    <input type=hidden name="retURL" value="https://srconsulting.io">
+
+                    <div class="form-group">
+                        <label for="first_name">Nome <span class="text-danger">*</span></label>
+                        <input id="first_name" maxlength="40" name="first_name" size="20" type="text" required
+                            placeholder="Seu  nome..." class="form-control" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="last_name">Sobrenome <span class="text-danger">*</span></label>
+                        <input id="last_name" maxlength="80" name="last_name" size="20" type="text"
+                            placeholder="Seu sobrenome..." class="form-control" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company">Empresa <span class="text-danger">*</span></label>
+                        <input id="company" maxlength="40" name="company" size="20" type="text" required
+                            placeholder="Sua empresa..." class="form-control" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mobile">Telefone <span class="text-danger">*</span></label>
+                        <input id="mobile" maxlength="40" name="mobile" size="20" type="phone" required
+                            placeholder="+55 (51) 99999-9999" class="form-control" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail <span class="text-danger">*</span></label>
+                        <input id="email" maxlength="80" name="email" size="20" type="email" required
+                            placeholder="seu@e-mail.com" class="form-control" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Mensagem</label>
+                        <textarea name="description" class="form-control" placeholder="Sua mensagem..."
+                            rows="3"></textarea>
+                    </div>
+
+                    <div class="form-send-btn">
+                        <span class="text-danger pull-left">* Informações obrigatórias</span>
+                        <button type="submit" name="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

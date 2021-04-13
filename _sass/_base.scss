@@ -75,6 +75,10 @@ aside {
     padding: 0;
 }
 
+.form-send-btn {
+    text-align: right;
+}
+
 // Navigation
 
 .navbar-default {
@@ -384,8 +388,34 @@ header {
     }
 }
 
+.stories-call-to-action {
+    margin-bottom: 50px;
+}
+
 // Contact
 #contact {
+    .contact-box {
+        max-width: 400px;
+        margin: 50px auto 0;
+        @media (min-width: 992px) {
+            margin: 20px auto 0;
+        }
+    }
+    .address-box {
+        height: 150px;
+        padding-top: 35px;
+        a {
+            color: rgba(white, .7);
+        }
+    }
+    .map-box {
+        iframe {
+            border: 0;
+            margin-bottom: -5px;
+            height: 150px;
+            width: 100%;
+        }
+    }
     .form-box {
         padding: 22px 15px;
     }
@@ -418,17 +448,14 @@ header {
 }
 
 #carrers {
-    padding: 0;
-    .opportunities-box {
+    padding-bottom: 0;
+    .carrers-box {
         padding: 50px 0;
         p {
             max-width: 60%;
             margin-left: auto;
             margin-right: auto;
         }
-    }
-    .form-send-btn {
-        text-align: right;
     }
 }
 
