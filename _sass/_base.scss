@@ -404,18 +404,22 @@ header {
         }
     }
     .address-box {
-        height: 150px;
-        padding-top: 35px;
+        padding-top: 20px;
+        @media (min-width: 992px) {
+            padding-top: 45px;
+        }
         a {
             color: rgba(white, .7);
         }
     }
     .map-box {
+        margin: 20px;
         iframe {
             border: 0;
             margin-bottom: -5px;
             height: 150px;
             width: 100%;
+            filter: drop-shadow(2px 4px 6px black);
         }
     }
     .form-box {
