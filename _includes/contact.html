@@ -186,7 +186,7 @@
             <div class="modal-body">
                 <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
                     <input type=hidden name="oid" value="00D3t000000fp4l">
-                    <input type=hidden name="retURL" value="https://srconsulting.io">
+                    <input type=hidden name="retURL" value="https://srconsulting.io/#contactrequested">
 
                     <div class="form-group">
                         <label for="first_name">Nome <span class="text-danger">*</span></label>
@@ -229,6 +229,24 @@
                         <button type="submit" name="submit" class="btn btn-primary">Enviar Mensagem</button>
                     </div>
                 </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="contatRequestedModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                <h4 class="modal-title">Mensagem Recebida</h4>
+            </div>
+            <div class="modal-body">
+                <h3>Obrigado!</h3>
+                <p>Recebemos a sua mensagem e logo entraremos em contato.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
             </div>
         </div>
     </div>

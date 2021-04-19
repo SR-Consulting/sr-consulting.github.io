@@ -7,6 +7,16 @@
 (function ($) {
     "use strict"; // Start of use strict
 
+    $(document).ready(function () {
+        var hash = $(location).attr('hash');
+
+        if (hash === '#contactrequested') {
+            $(location).attr('hash', '');
+
+            $('#contatRequestedModal').modal('show');
+        }
+    });
+
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function (event) {
         var $anchor = $(this);
