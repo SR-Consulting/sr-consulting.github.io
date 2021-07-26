@@ -12,6 +12,16 @@ body {
     height: 80px;
 }
 
+.partner {
+    height: 65px;
+    margin-top: 25px;
+}
+
+.certified {
+    height: 45px;
+    margin-top: 35px;
+}
+
 hr {
     border-color: $theme-primary;
     border-width: 3px;
@@ -223,7 +233,7 @@ header {
                 p {
                     font-size: 24px;
                     text-shadow: 2px 2px 4px rgba(black, 1.0);
-                    max-width: 85%;
+                    max-width: 80%;
                     margin-left: auto;
                     margin-right: auto;
                 }
@@ -279,52 +289,40 @@ header {
         }
     }
     .specialties-box-sales {
-        background: rgba(green, .4 );
+        background: rgba(darkcyan, .4 );
     }
     .specialties-box-service {
         background: rgba(red, .4 );
     }
     .specialties-box-marketing {
-        background: rgba(orange, .4 );
+        background: rgba(darkorange, .4 );
     }
-    .specialties-box-social {
+    .specialties-box-community {
         background: rgba(darkblue, .4 );
     }
     .specialties-box-commerce {
-        background: rgba(lightgreen, .4 );
+        background: rgba(green, .4 );
     }
-    .specialties-box-community {
-        background: rgba(yellow, .4 );
-    }
-    .specialties-box-finance {
+    .specialties-box-financial {
         background: rgba(purple, .4 );
     }
     .specialties-box-health {
         background: rgba(darkred, .4 );
     }
-    .specialties-box-education {
-        background: rgba(magenta, .4 );
-    }
-    .specialties-box-industry {
-        background: rgba(gray, .4 );
+    .specialties-box-platform {
+        background: rgba(indigo, .4 );
     }
     .specialties-box-mobile {
-        background: rgba(cyan, .4 );
+        background: rgba(darkgoldenrod, .4 );
     }
-    .specialties-box-analytics {
+    .specialties-box-einstein {
+        background: rgba(limegreen, .4 );
+    }
+    .specialties-box-tableau {
         background: rgba(chocolate, .4 );
     }
-    .specialties-box-integrations {
-        background: rgba(deepSkyBlue, .4 );
-    }
-    .specialties-box-devops {
-        background: rgba(gold, .4 );
-    }
-    .specialties-box-security {
-        background: rgba(snow, .4 );
-    }
-    .specialties-box-cloud {
-        background: rgba(lightgreen, .4 );
+    .specialties-box-mulesoft {
+        background: rgba(dodgerblue, .4 );
     }
 }
 
@@ -471,6 +469,9 @@ header {
         background-position: center;
         background-image: url('../img/carrers.jpg');
         height: 250px;
+        @media (max-width: 768px) {
+            height: 400px;
+        }
         .carrers-box-caption {
             color: white;
             display: block;
