@@ -554,6 +554,30 @@ footer {
     text-shadow: 1px 1px 8px rgba(black, .3);
 }
 
+.whatsapp-link-container {
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    height: 55px;
+    width: 55px;
+    z-index: 100;
+    border-radius: 50px;
+    background-color: #25d366;
+    box-shadow: 1px 1px 8px rgba(black, .3);
+    a,
+    a:focus {
+        color: rgba(white, .7);
+        &:hover {
+            color: white;
+        }
+        i {
+            margin-top: 5px;
+            margin-left: 3px;
+        }
+    }
+    text-align: center;
+}
+
 // Extras
 // -- Highlight Color Customization
 ::-moz-selection {
