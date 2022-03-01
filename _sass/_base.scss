@@ -288,6 +288,9 @@ header {
             }
         }
     }
+    &:hover {
+        opacity: .8;
+    }
     .specialties-box-sales {
         background: rgba(darkcyan, .4 );
     }
@@ -372,12 +375,10 @@ header {
 .stories-box {
     position: relative;
     display: block;
-    @media (min-width: 768px) {
-        max-width: 400px;
-    }
+    max-width: 650px;
     .stories-box-caption {
         display: block;
-        background: rgba(white, .8);
+        background: rgba(white, .6);
         position: absolute;
         bottom: 0;
         text-align: center;
@@ -394,6 +395,9 @@ header {
                 width: 85%;
             }
         }
+    }
+    &:hover {
+        opacity: .9;
     }
 }
 
@@ -417,6 +421,9 @@ header {
         }
         a {
             color: rgba(white, .7);
+            i {
+                color: white;
+            }
         }
     }
     .map-box {
