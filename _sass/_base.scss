@@ -549,7 +549,7 @@ footer {
 .top-link-container {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 40px;
     z-index: 100;
     a,
     a:focus {
@@ -559,6 +559,16 @@ footer {
         }
     }
     text-shadow: 1px 1px 8px rgba(black, .3);
+}
+
+.contact-link-container {
+    position: fixed;
+    bottom: 55px;
+    right: 10px;
+    height: 100px;
+    width: 79px;
+    z-index: 100;
+    text-align: center;
 }
 
 .whatsapp-link-container {
