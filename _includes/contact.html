@@ -89,6 +89,15 @@
                     <input type=hidden name="retURL" value="https://srconsulting.io/#contactrequested">
                     <input type=hidden id="lead_source" name="lead_source" value="Web" />
 
+                    <!-- UTM Source -->
+                    <input  id="00NTT000000aGhO" maxlength="255" name="00NTT000000aGhO" size="20" type="hidden" /><br>
+                    
+                    <!-- UTM Medium -->
+                    <input  id="00NTT000000aGvt" maxlength="255" name="00NTT000000aGvt" size="20" type="hidden" /><br>
+                    
+                    <!-- UTM Campaign -->
+                    <input  id="00NTT000000aGxV" maxlength="255" name="00NTT000000aGxV" size="20" type="hidden" /><br>
+
                     <!-- <div class="form-group">
                         <label for="first_name">Nome <span class="text-danger">*</span></label>
                         <input id="first_name" maxlength="40" name="first_name" size="20" type="text" required
@@ -169,3 +178,12 @@
         <img src="img/contato_icon.png" width="79px" height="100px" title="Entre em contato" />
     </a>
 </div>
+
+<script> 
+    const urlParams = new URLSearchParams(window.location.search);
+    
+    document.getElementById("00NTT000000aGhO").value = urlParams.get('utm_source');
+    document.getElementById("00NTT000000aGvt").value = urlParams.get('utm_medium');
+    document.getElementById("00NTT000000aGxV").value = urlParams.get('utm_campaign');
+    
+</script>
