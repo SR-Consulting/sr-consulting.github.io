@@ -106,9 +106,7 @@
                     <input type=hidden id="lead_source" name="lead_source" value="Web" />
 
                     <!-- GA4 Tracking Info (Offline Conversion) -->
-                    <input type="hidden" id="GACLIENTID" name="GACLIENTID" value="">
-                    <input type="hidden" id="GAUSERID" name="GAUSERID" value="">
-                    <input type="hidden" id="GATRACKID" name="GATRACKID" value="">
+                    <input  id="00NTT000003bpxt" maxlength="255" name="00NTT000003bpxt" size="20" type="hidden" />
 
                     <!-- UTM Source -->
                     <input  id="00NTT000000aGhO" maxlength="255" name="00NTT000000aGhO" size="20" type="hidden" /><br>
@@ -212,5 +210,6 @@
     document.getElementById("00NTT000000aGhO").value = urlParams.get('utm_source');
     document.getElementById("00NTT000000aGvt").value = urlParams.get('utm_medium');
     document.getElementById("00NTT000000aGxV").value = urlParams.get('utm_campaign');
+    document.getElementById("00NTT000003bpxt").value = urlParams.get('gclid');
     
 </script>
