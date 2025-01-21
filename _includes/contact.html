@@ -104,6 +104,7 @@
                     <input type=hidden name="oid" value="00D3t000000fp4l">
                     <input type=hidden name="retURL" value="https://srconsulting.io/#contactrequested">
                     <input type=hidden id="lead_source" name="lead_source" value="Web" />
+                    <input type=hidden id="00N3t00000KtNdu" name="00N3t00000KtNdu" title="Canal de Aquisição" value="Inbound" />
 
                     <!-- Google Ads Client ID (Offline Conversion) -->
                     <input  id="00NTT000003bpxt" maxlength="255" name="00NTT000003bpxt" size="20" type="hidden" />
@@ -117,11 +118,8 @@
                     <!-- UTM Campaign -->
                     <input  id="00NTT000000aGxV" maxlength="255" name="00NTT000000aGxV" size="20" type="hidden" /><br>
 
-                    <!-- <div class="form-group">
-                        <label for="first_name">Nome <span class="text-danger">*</span></label>
-                        <input id="first_name" maxlength="40" name="first_name" size="20" type="text" required
-                            placeholder="Seu  nome..." class="form-control" />
-                    </div> -->
+                    <!-- UTM Term -->
+                    <input  id="00NTT000001pFXV" maxlength="255" name="00NTT000001pFXV" size="20" type="hidden" />
 
                     <div class="form-group">
                         <label for="last_name">Nome <span class="text-danger">*</span></label>
@@ -210,6 +208,7 @@
     document.getElementById("00NTT000000aGhO").value = urlParams.get('utm_source');
     document.getElementById("00NTT000000aGvt").value = urlParams.get('utm_medium');
     document.getElementById("00NTT000000aGxV").value = urlParams.get('utm_campaign');
+    document.getElementById("00NTT000001pFXV").value = urlParams.get('utm_term');
     document.getElementById("00NTT000003bpxt").value = urlParams.get('gclid');
     
 </script>
